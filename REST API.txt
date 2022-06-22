@@ -1,0 +1,13 @@
+RESTful API : yaitu penggunaan API secara benar
+-menggunakan HTTP method yg benar : GET,POST,DELETE,PUT
+-URI/endpoints pakai kata benda, bukan kata kerja
+ 	ex. GET local/app/mhs/12 untuk GET data mhs dengan id 12
+		tidak perlu GET local/app/mhs/detail/12
+-stateless : tidak pnya session, semua data dikirim saat request termasuk key(otentifikasi)
+
+
+
+JSON adalah property pda JS yg berisi key dan value (seperti array assoc)
+JSON tidak memiliki method(function)
+cara penulisan 
+

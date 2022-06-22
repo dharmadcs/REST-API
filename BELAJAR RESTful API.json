@@ -1,0 +1,77 @@
+1. apa itu API
+
+2. JSON (javascript object notation)
+
+3. Public API
+
+4. Membuat REST Server
+
+
+
+
+
+RESTful API : yaitu penggunaan API secara benar
+-menggunakan HTTP method yg benar : GET,POST,DELETE,PUT
+-URI/endpoints pakai kata benda, bukan kata kerja
+ 	ex. GET local/app/mhs/12 untuk GET data mhs dengan id 12
+		tidak perlu GET local/app/mhs/detail/12
+-stateless : tidak pnya session, semua data dikirim saat request termasuk key(otentifikasi)
+
+
+
+-JSON adalah property pda JS yg berisi key dan value (seperti array assoc)
+-JSON tidak memiliki method(function)
+-JSON bisa berisi banyak object, acaranya bungki=us dg array [ {},{},{} ]
+
+cara penulisan :
+
+{"key" : <value/tipedata>}
+
+tipe data pada JSON :
+-boolean = true/false
+-array = ["array1, array2,...."]
+-string = "text"
+-object = {"key" : value}
+-number = int/float
+-null = null(kosong)
+
+
+{
+    "nama" : "dharma",
+    "kelas" : "karyawan"
+}
+
+
+#PHP
+
+json_encode() -> ubah data ke json
+json_decode() -> ubah json ke data
+
+Cara akses
+file_get_contents($contents, true) jika true arr assoc, jika kosong jadi object
+
+
+
+
+#Javascript
+JSON.stringify() ->encode
+JSON.parse() -> decode
+
+cara akses
+ajax -XMLHttpRequest
+	 -JQuery
+
+
+
+API Client (koneksi ke API Public)
+
+PHP
+-file_get_content()
+-cURL
+
+JS
+-ajax/jQuery
+
+
+
+
